@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mitin.myapplication.AllAppsActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/freeMemory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Memory"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/totalMemory"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Total Memory"
+            android:textSize="25sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/cpuusage"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Cpu Usage"
+            android:textSize="25sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="281dp"
+            android:layout_marginRight="281dp"
+            android:background="@android:color/holo_green_light"
+            android:text="All" />
+
+        <Button
+            android:id="@+id/apps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Apps"
+            tools:background="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_red_dark"
+            android:text="System" />
+    </RelativeLayout>
+
+</LinearLayout>
